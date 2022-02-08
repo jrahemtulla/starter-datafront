@@ -1,3 +1,22 @@
 <!-- --------------------------------- -->
 <!--       Add shape, move shape       -->
 <!-- --------------------------------- -->
+<div id="circle" style ="
+    z-index:1;
+    position: absolute;
+    left: 100px; 
+    top: 200px; 
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: black;
+    "></div>"
+
+<button onclick= "moveCircle()">Move</button>
+<script>
+    var circle = document.getElementById('circle');
+    
+    function moveCircle(){
+        circle.style.left = '250px';
+    }
+</script>

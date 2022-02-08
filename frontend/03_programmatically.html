@@ -1,3 +1,37 @@
 <!-- --------------------------------- -->
 <!--    Add shape programmatically     -->
-<!-- --------------------------------- -->
+<!-- div id="circle" style ="
+z-index:1;
+position: absolute;
+left: 100px; 
+top: 200px; 
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background: black;
+"></div>"
+Here we are doing the same as in no 1 but just doing it programatically 
+-->
+
+<button onclick="addCircle ()">Add</button>
+<script>
+    var x = 100;
+    var y = 200;
+
+function addCircle(){
+    var div = document.createElement('div');
+    div.style.zIndex = '1';
+    div.style.position = 'absolute';
+    div.style.left = x + 'px';
+    div.style.top = y + 'px';
+    div.style.width = '20px';
+    div.style.height = '20px';
+    div.style.borderRadius = '50%';
+    div.style.background = 'black';
+
+    //append to page doc
+    document.getElementsByTagName('body')[0].appendChild(div);
+    //refers to the body of the document
+
+}
+</script>
